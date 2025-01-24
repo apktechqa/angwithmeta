@@ -5,6 +5,9 @@ import { BlogComponent } from './blog/blog.component';
 import { DoctorComponent } from './doctor/doctor.component';
 import { ServicesComponent } from './services/services.component';
 import { NgModule } from '@angular/core';
+
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; // Import 404 component
+
 export const routes: Routes = [
     { path: '',   redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent, 
@@ -41,7 +44,8 @@ export const routes: Routes = [
         description: 'services detail', 
         keywords: 'services, our services, doctor services'
         }
-    }
+    },
+    { path: '**', component: PageNotFoundComponent },  // Catch-all route for 404
 ];
 
 @NgModule({
