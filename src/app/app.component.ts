@@ -16,6 +16,9 @@ import { filter, map } from 'rxjs';
 // }
 
 export class AppComponent implements OnInit {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   constructor(
     private titleService: Title,
     private metaService: Meta,
