@@ -9,8 +9,8 @@ import { NgModule } from '@angular/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; // 404 component
 
 export const routes: Routes = [
-    { path: '',   redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent, 
+    // { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path: '', component: HomeComponent, 
         data: { 
         title: 'Home Page - MRD', 
         description: 'Welcome to the MRD home page.', 
